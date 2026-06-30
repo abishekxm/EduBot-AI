@@ -22,7 +22,7 @@
       <tbody>
         {% for d in interview_domains %}
         <tr>
-          <td><strong>{{ d.domain|title|replace:"_":" " }}</strong></td>
+          <td><strong>{{ d.domain|title }}</strong></td>
           <td><span class="badge badge-primary">{{ d.count }}</span></td>
           <td>
             {% if d.avg_score %}
